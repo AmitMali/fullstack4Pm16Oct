@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Refresher</title>
+  </head>
+  <body>
+    <style>
+      a.link-none {
+        text-decoration: none;
+        color: black;
+      }
+      .box {
+        background-color: orange;
+        height: 300px;
+        width: 400px;
+        padding: 25px 10px;
+        border: 5px red solid;
+        border-radius: 200px;
+        overflow: hidden;
+        position: relative;
+        transition: 300ms ease-in-out;
+      }
+      .box-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      .box-text::first-letter {
+        font-size: 1.4em;
+        color: red;
+        text-decoration: underline;
+        background-color: black;
+      }
+      .box-text::first-line {
+        color: red;
+        text-decoration: underline;
+      }
+      .box-text::after {
+        content: "---->";
+      }
+      .box:hover {
+        border-radius: 0px;
+        background-image: url(./assets/images/cute-puppy.jpeg);
+        background-size: cover;
+        cursor: pointer;
+        transform: rotate(30deg);
+      }
+    </style>
+
+    <a class="link-none" href="">
+      <div class="box">
+        <p class="box-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+          impedit!
+        </p>
+      </div></a
+    >
+  </body>
+</html>
